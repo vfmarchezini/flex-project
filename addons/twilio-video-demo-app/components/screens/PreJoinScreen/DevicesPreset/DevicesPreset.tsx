@@ -233,6 +233,7 @@ export default function DevicesPreset({}: DevicesPresetProps) {
 
   // useEffect to run preflight test
   useEffect(() => {
+    console.log('tokenStatus', tokenStatus);
     if (tokenStatus === "success") {
       setPreflightStatus("loading");
       const { token } = data;

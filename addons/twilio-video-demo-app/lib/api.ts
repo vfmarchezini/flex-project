@@ -45,6 +45,7 @@ export const useGetToken = (
     ["token", roomName, identity],
     async () => {
       const data = await getAccessToken(roomName, identity);
+      console.log('fetching token', data);
       return data;
     },
     {
